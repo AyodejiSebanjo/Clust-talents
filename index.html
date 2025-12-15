@@ -1,0 +1,72 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clusttal Registration Form</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <main>
+      <div class="title">
+        <h2>Student Registration Form</h2>
+        <p>Register to get admitted into Clust Talents.</p>
+      </div>
+
+      <div class="about">
+        <p>
+          Clust talents is an academy where creatives are taught, grounded and
+          trained in industry and globally leading skills. <br />We offer an
+          array of skill training both tech inclined, technically inclined and
+          mentally inclined.
+        </p>
+      </div>
+
+      <form action="" id="studentRegForm" class="studentRegForm">
+        <div class="input-group">
+          <label for="name">First name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your first name"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="email">Enter email address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Example@gmail.com"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="phone">Phone number</label>
+          <input
+            type="number"
+            id="phone"
+            name="phone"
+            placeholder="+23481xxx xxx xxxx"
+          />
+        </div>
+        <div class="select-group">
+          <label for="skill">Skills</label>
+          <select name="skill" id="skill">
+            <option value="Graphics design">Graphics design</option>
+            <option value="website-development">website-development</option>
+            <option value="uiux">UIUX</option>
+            <option value="content-creation">Content Creation</option>
+            <option value="fashion-design">Fashion design</option>
+            <option value="baking">baking</option>
+          </select>
+          
+        </div>
+      </form>
+      <button type="submit" class="btn">Register</button>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
