@@ -13,48 +13,49 @@
   --stroke: #d9e1ec;
   --black-text: #2e2e34;
   --white-text: #ffffff;
+  --primary-red: #f62d00;
+  --primary-red-40: #f62d0064;
+  --primary-red-hover: #da2b04;
 }
 body {
+    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-family: "Google Sans", sans-serif;
   background-color: var(--surface-background);
-  height: 100vh;
   color: var(--black-text);
+  padding: 20px;
 }
 
-button{
-    width: 100%;
-    background-color:  #f62d00;
-    color: var(--white-text) ;
+button {
+  width: 100%;
+  background-color: var(--primary-red);
+  color: var(--white-text);
 }
-button:hover{
-
-    background-color:  #da2b04;
-    color: var(--white-text) ;
+button:hover {
+  background-color: var(--primary-red-hover);
+  color: var(--white-text);
 }
 
-.btn{
-    padding: 16px 32px;
-    font-size: 16px;
-    font-weight: 550;
-    border-radius: 10px;
-    border: 0;
-    cursor: pointer;
+.btn {
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 550;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
 }
 main {
-  width: 40%;
-  height: auto;
+  width: 100%;
+  max-width: 780px;
   background-color: var(--surface-foreground);
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
   padding: 56px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   gap: 40px;
-  transform: translate(-50%, -50%);
   border: 1px solid var(--stroke);
 }
 
@@ -74,7 +75,7 @@ h2 {
 }
 .title p {
   font-size: 20px;
-    letter-spacing: -1px;
+  letter-spacing: -1px;
 }
 
 .about {
@@ -114,10 +115,11 @@ input {
   border: 1px solid var(--stroke);
 }
 
-input:active {
+input:focus, select:focus {
+  outline: none;
   padding: 18px 16px;
   border-radius: 8px;
-  border: 1px solid var(--stroke);
+  border: 1px solid var(--primary-red-40);
 }
 
 .select-group {
@@ -130,4 +132,26 @@ select {
   padding: 18px 16px;
   border-radius: 8px;
   border: 1px solid var(--stroke);
+}
+
+.login {
+  color: var(--primary-red);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login:hover {
+  color: var(--primary-red-hover);
+  text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+  main {
+    padding: 32px 20px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
 }
