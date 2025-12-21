@@ -2,105 +2,282 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clusttal Registration Form</title>
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="indexstylesheet.css" />
+    <title>Clust-Tal Website | Homepage</title>
   </head>
   <body>
-    <main>
-      <div class="title">
-        <h2>Student Registration Form</h2>
-        <p>Register to get admitted into Clust Talents.</p>
+    <!-- HEADER SECTION  -->
+    <section class="header">
+      <div class="containerwrapper topnav">
+        <div class="brand_logo">
+        <img src="images/clusttal_logo.png" alt="clusttal_logo" />
       </div>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#"> Home </a></li>
 
-      <div class="about">
-        <p>
-          Clust talents is an academy where creatives are taught, grounded and
-          trained in industry and globally leading skills. <br />We offer an
-          array of skill training both tech inclined, technically inclined and
-          mentally inclined.
-        </p>
+          <li><a href="#"> Courses </a></li>
+          <li>
+            <a href=""> Resources </a>
+            <ul class="dropdown">
+              <li><a href="#"> Library</a></li>
+              <li><a href="#"> Templates</a></li>
+            </ul>
+          </li>
+          <li><a href="#">The Hub</a></li>
+          <li><a href="#"> About </a></li>
+        </ul>
+      </nav>
+      <div class="button_row">
+        <button class="btn secondary_btn">Login</button>
+        <button class="btn primary_btn">Register today</button>
       </div>
+      </div>
+    </section>
 
-      <form id="studentRegForm" class="studentRegForm">
-        <div class="input-group">
-          <label for="first-name">First name</label>
-          <input
-            type="text"
-            id="first-name"
-            name="first-name"
-            placeholder="Enter your first name"
-            required
-          />
-        </div>
-        <div class="input-group">
-          <label for="last-name">Last name</label>
-          <input
-            type="text"
-            id="last-name"
-            name="last-name"
-            placeholder="Enter your last name"
-            required
-          />
-        </div>
-
-        <div class="input-group">
-          <label for="email">Enter email address</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="example@gmail.com"
-            required
-          />
-        </div>
-
-        <div class="input-group">
-          <label for="phone">Phone number</label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            placeholder="+23481xxx xxx xxxx"
-            required
-          />
-        </div>
-        <div class="input-group">
-          <label for="dob">Date of Birth</label>
-          <input
-            type="date"
-            id="dob"
-            name="dob"
-            placeholder="Select your date of birth"
-            required
-          />
-        </div>
-        <div class="input-group">
-          <label for="state">State</label>
-          <select id="state" name="state" required>
-            <option value="" disabled selected>Select your state</option>
-            <option value="abia">Abia</option>
-          </select>
-        </div>
-        <div class="select-group">
-          <label for="skill">Skills</label>
-          <select name="skill" id="skill" required>
-            <option value="" disabled selected> Select a skill</option>
-            <option value="graphics-design">Graphics design</option>
-            <option value="website-development">website-development</option>
-            <option value="uiux">UIUX</option>
-            <option value="content-creation">Content Creation</option>
-            <option value="fashion-design">Fashion design</option>
-            <option value="baking">baking</option>
-          </select>
-        </div>
-        <button type="submit" class="btn">Register</button>
-      </form>
-      
+    <!-- HERO SECTION -->
+    <section class="hero containerwrapper">
+      <div class="curriculum">
+        <p class="curriculum_text">Curriculum Based Learning</p>
+      </div>
+      <h1 class="herotitle">Learn High In-demand <br />Industry Skills</h1>
       <p>
-        Already a student? <a href="#" class="login">Login</a> 
+        You've got the ability, now acquire the skils! <br />
+        Learn market-ready skills that get you empowered for the business world!
       </p>
-    </main>
+      <div class="button_row">
+        <button class="btn secondary_btn">Explore courses</button>
+        <button class="btn primary_btn">Register</button>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- SCROLLABLE STUDY STRUCTURE SECTION -->
+    <section class="studystruture section">
+      <div class="containerwrapper">
+      <div class="scroller">
+        <div class="inner_scroller">
+          <p>Lectures</p>
+          <p>Assessments</p>
+          <p>Practicals</p>
+          <p>Structured curriculum</p>
+        </div>
+      </div>
+      </div>
+
+    </section>
+
+    <!-- BENEFITS SECTION -->
+    <section class="benefits containerwrapper section">
+      <div class="sectionTitleRow">
+        <div class="sectionTitleLeftRow">
+          <h2 class="sectionTitle">Benefits</h2>
+          <p>
+            lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <button class="btn ghost_btn">view all</button>
+      </div>
+
+      <div class="benefitsCardsGrid">
+        <div class="benefitCard">
+          <h2>01</h2>
+          <div class="benefitCardContent">
+            <h4>Industry-relevant curriculum</h4>
+            <p>
+              Our courses are designed to meet the current demands of the
+              industry, ensuring you acquire skills that are in high demand.
+            </p>
+          </div>
+        </div>
+
+        <div class="benefitCard">
+          <h2>02</h2>
+          <div class="benefitCardContent">
+            <h4>Expert instructors</h4>
+            <p>
+              Learn from experienced professionals who bring real-world insights
+              and practical knowledge to the classroom.
+            </p>
+          </div>
+        </div>
+
+        <div class="benefitCard">
+          <h2>03</h2>
+
+          <div class="benefitCardContent">
+            <h4>Flexible learning options</h4>
+            <p>
+              Access our courses anytime, anywhere, and learn at your own pace
+              with our flexible online learning platform.
+            </p>
+          </div>
+        </div>
+        <div class="benefitCard">
+          <h2>04</h2>
+          <div class="benefitCardContent">
+            <h4>Industry-relevant curriculum</h4>
+            <p>
+              Our courses are designed to meet the current demands of the
+              industry, ensuring you acquire skills that are in high demand.
+            </p>
+          </div>
+        </div>
+
+        <div class="benefitCard">
+          <h2>05</h2>
+          <div class="benefitCardContent">
+            <h4>Expert instructors</h4>
+            <p>
+              Learn from experienced professionals who bring real-world insights
+              and practical knowledge to the classroom.
+            </p>
+          </div>
+        </div>
+
+        <div class="benefitCard">
+          <h2>06</h2>
+          <div class="benefitCardContent">
+            <h4>Flexible learning options</h4>
+            <p>
+              Access our courses anytime, anywhere, and learn at your own pace
+              with our flexible online learning platform.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COURSES SECTION -->
+    <section class="courses containerwrapper section">
+      <div class="sectionTitleRow">
+        <div class="sectionTitleLeftRow">
+          <h2 class="sectionTitle">Our Courses</h2>
+          <p>
+            lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <button class="btn ghost_btn">view all</button>
+      </div>
+
+      <div class="coursesCardsGrid">
+        <div class="courseCard">
+          <img
+            src="images/websitedesign.png"
+            alt="website design"
+            class="categoryimage"
+          />
+          <div class="courseCardContent">
+            <h3>Web Design Fundamentals</h3>
+            <p>
+              Learn the fundamentals of web design, including HTML, CSS, and
+              responsive design principles. Develop the skills to create
+              visually appealing and user-friendly websites.
+            </p>
+          </div>
+          <button class="btn secondary_btn">Start Learning</button>
+        </div>
+        <div class="courseCard">
+          <img
+            src="images/websitedesign.png"
+            alt="website design"
+            class="categoryimage"
+          />
+          <div class="courseCardContent">
+            <h3>Web Design Fundamentals</h3>
+            <p>
+              Learn the fundamentals of web design, including HTML, CSS, and
+              responsive design principles. Develop the skills to create
+              visually appealing and user-friendly websites.
+            </p>
+          </div>
+          <button class="btn secondary_btn">Start Learning</button>
+        </div>
+        <div class="courseCard">
+          <img
+            src="images/websitedesign.png"
+            alt="website design"
+            class="categoryimage"
+          />
+          <div class="courseCardContent">
+            <h3>Web Design Fundamentals</h3>
+            <p>
+              Learn the fundamentals of web design, including HTML, CSS, and
+              responsive design principles. Develop the skills to create
+              visually appealing and user-friendly websites.
+            </p>
+          </div>
+          <button class="btn secondary_btn">Start Learning</button>
+        </div>
+
+        <div class="courseCard">
+          <img
+            src="images/graphicsdesign.png"
+            alt="graphics design"
+            class="categoryimage"
+          />
+          <div class="courseCardContent">
+            <h3>Graphic Design</h3>
+            <p>
+              Learn the fundamentals of graphic design, including color theory,
+              typography, and layout principles. Develop the skills to create
+              visually appealing and effective designs.
+            </p>
+          </div>
+
+          <button class="btn secondary_btn">Start Learning</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footercontainer">
+      <div class="upperfooter">
+        <div class="leftfooter">
+          <div class="footerbrandlogo">
+            <img src="images/clusttal_logo.png" alt="clusttal_logo" />
+          </div>
+          <p class="footerdescription">
+            Designed and built with all the love in the world by the Clust-Tal development team.
+          </p>
+        </div>
+
+        <div></div>
+
+        <div class="footernav rightfooter">
+          <div class="footerlinksection">
+            <h5>Home</h5>
+            <ul>
+              <li class="footerlinks"><a href="#">About Us</a></li>
+              <li class="footerlinks"><a href="#">Careers</a></li>
+              <li class="footerlinks"><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <!-- <div class="footerlinksection">
+            <h5>About Us</h5>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div> -->
+          <!-- <div class="footerlinksection">
+            <h3>Social</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="bottomfooter">
+        <hr>
+        <p>&copy; 2025 Clust-Tal | All rights reserved</p>
+        <hr>
+      </div>
+    </footer>
   </body>
 </html>

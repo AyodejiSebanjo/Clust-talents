@@ -28,3 +28,6 @@ form.addEventListener("submit", (e) => {
 
   alert("Registration successful!");
 });
+
+
+const scrollers = document.querySelectorAll ('scroller')

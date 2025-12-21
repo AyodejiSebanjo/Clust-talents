@@ -1,0 +1,506 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* COLOR VARIABLES */
+  --surface-background: #f8f8ff;
+  --surface-foreground: #ffffff;
+  --stroke: #d9e1ec;
+  --black-text: #39393c;
+  --white-text: #ffffff;
+  --primary-red: #f62d00;
+  --primary-red-40: #f62d0064;
+  --primary-red-hover: #da2b04;
+  --primary-20: #f8efedee;
+  --primary-30: #f5d0c8ee;
+}
+
+/* Styling Headers */
+h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  letter-spacing: -4px;
+}
+
+h2 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  letter-spacing: -3px;
+}
+
+h3 {
+  font-size: 1.65rem;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: -1.5px;
+}
+h5 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: -1.5px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+/* ASSETSTYLING */
+
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  background-color: var(--primary-red);
+  color: var(--white-text);
+  font-family: "Work Sans", sans-serif;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--primary-red-hover);
+  color: var(--white-text);
+}
+
+.btn {
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 550;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+}
+
+.secondary_btn {
+  background-color: transparent;
+  border: 1px solid var(--primary-red);
+  color: var(--primary-red);
+}
+
+.secondary_btn:hover {
+  background-color: var(--surface-background);
+  color: var(--primary-red);
+}
+
+.ghost_btn {
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  color: var(--primary-red);
+}
+
+.ghost_btn:hover {
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  color: var(--primary-red-hover);
+}
+
+/* BODY STYLING */
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Google Sans", sans-serif;
+  background-color: var(--surface-background);
+  color: var(--black-text);
+  font-family: "Work Sans", sans-serif;
+}
+
+/* CONTAINERS STYLING */
+
+.containerwrapper {
+  width: 100%;
+  margin: 48px 0;
+
+  max-width: 1440px;
+  padding: 48px 120px;
+}
+
+.section {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+
+
+}
+
+/* HERO STYLING */
+.header {
+  width: 100%;
+  background-color: var(--surface-foreground);
+}
+
+.topnav {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  padding: 20px 120px 24px 120px;
+}
+
+.brand_logo img {
+  width: 120px;
+  height: auto;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+ul li {
+  display: inline-block;
+  font-size: 18px;
+}
+
+ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 20px 16px;
+  color: var(--primary-red);
+}
+ul li a:hover {
+  color: var(--primary-red-hover);
+  text-decoration: underline;
+}
+
+ul li ul.dropdown li {
+  width: 100%;
+}
+
+ul li ul.dropdown {
+  width: 100%;
+  display: block;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  overflow: hidden;
+}
+
+ul li:hover ul.dropdown {
+  display: inline;
+  background: var(--primary-red);
+}
+
+.button_row {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+/* HERO SECTION */
+.hero {
+  width: 100%;
+  margin-top: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+
+.curriculum {
+  background: var(--primary-20);
+  display: inline-block;
+  padding: 4px 16px;
+  border-radius: 50px;
+}
+
+.hero .curriculum_text {
+  font-size: 14px;
+}
+.herotitle {
+  font-size: 72px;
+  letter-spacing: -2;
+}
+
+.hero p {
+  font-size: 20px;
+  line-height: 1.8rem;
+  font-weight: 400;
+}
+
+.hero .primary_btn {
+  display: none;
+}
+
+/* studystruture styling */
+
+.studystruture {
+  width: 100%;
+  background: var(--primary-20);
+  height: 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 52px;
+  font-size: 20px;
+}
+
+.studystruture p::after {
+  width: 24px;
+  height: 24px;
+  background-color: var(--primary-red-hover);
+  color: var(--primary-red-hover);
+}
+
+.scroller {
+  max-width: 600px;
+}
+
+.inner_scroller {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* BENEFITS SECTION */
+
+.sectionTitleRow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sectionTitleLeftRow {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 75%;
+}
+
+.sectionTitleLeftRow p {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+.benefitsCardsGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 28px;
+}
+
+.benefitCard {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--surface-foreground);
+  gap: 28px;
+  padding: 28px;
+  border-radius: 24px;
+}
+
+.benefitCard h2 {
+  font-size: 2.8rem;
+  color: var(--primary-30);
+  font-weight: 700;
+  letter-spacing: -4px;
+}
+
+.benefitCardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* COURSES SECTION */
+.coursesCardsGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.courseCard {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--surface-foreground);
+  gap: 28px;
+  padding: 28px;
+  border-radius: 24px;
+  transition: 250ms ease-in;
+  border: 1px solid #ffffff;
+}
+.courseCard:hover {
+  background-color: #fffdfd;
+  border: 1px solid #fed6d6;
+}
+
+.categoryimage {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.courseCardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* FOOTER */
+.footercontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  padding: 56px 120px;
+  background-color: #4d1002;
+  color: var(--white-text);
+}
+
+.brand_logo {
+  width: 100%;
+  height: auto;
+}
+
+/* FOOTER */
+.footercontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  padding: 56px 120px;
+  background-color: #4d1002;
+  color: var(--white-text);
+  gap: 40px;
+}
+
+.upperfooter {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.footerbrandlogo {
+  width: 100%;
+  height: auto;
+}
+
+.footerbrandlogo img {
+  width: 180px;
+  height: auto;
+}
+
+.footerdescription {
+  font-size: 16px;
+  line-height: 1.6rem;
+  width: 65%;
+  color: #ffffffb3;
+}
+
+.leftfooter {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.footernav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 64px;
+}
+
+.footerlinksection {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  justify-content: start;
+  gap: 36px;
+  background: var(--primary-red-40);
+}
+
+.footerlinksection h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.footerlinksection ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerlinksection a {
+  display: block;
+  color: var(--white-text);
+  padding: 0;
+  text-align: left;
+}
+
+.footerlinksection a:hover {
+  color: var(--white-text);
+}
+
+.bottomfooter {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+}
+
+.bottomfooter p {
+  color: #ffffff4d;
+  font-size: 16px;
+  width: 100%;
+}
+
+.bottomfooter hr {
+  border: 0.5px solid;
+  color: #ffffff4d;
+  width: 100%;
+}
